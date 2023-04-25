@@ -11,6 +11,7 @@ public class Event
     private String title;
     private String location;
     private Date start;
+    private String description = "";
 
     /**
      * Default Constructor initializes a new Event with
@@ -61,6 +62,10 @@ public class Event
     {
         return location;
     }
+    public String getDescription() {
+        return description;
+    }
+
     /**
      * This method will check if a calling Event takes place before
      * than the passed argument event. Order of precedence goes date
